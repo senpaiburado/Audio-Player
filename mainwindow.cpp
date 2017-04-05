@@ -9,8 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     player = new QMediaPlayer(this);
     player->setVolume(ui->volumeSlider->value());
     path = "";
-    ui->clock->
-
 
     connect(ui->setMusicButton, SIGNAL(pressed()), this, SLOT(setSongPath()));
     connect(ui->stopButton, SIGNAL(pressed()), this, SLOT(stop()));
